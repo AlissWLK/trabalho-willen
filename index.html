@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Matemática Avançada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Matemática Avançada</h1>
+        
+        <!-- Escolha do tipo de cálculo -->
+        <div class="calculation-options">
+            <label for="calculationType">Selecione o tipo de cálculo:</label>
+            <select id="calculationType">
+                <option value="soma">Soma de Matrizes</option>
+                <option value="multiplicacao">Multiplicação de Matrizes</option>
+                <option value="vetor">Operações com Vetores</option>
+                <option value="serie">Cálculo de Séries</option>
+                <option value="derivada">Derivada Numérica</option>
+                <option value="integral">Integral Numérica</option>
+            </select>
+        </div>
+
+        <!-- Input de matrizes ou vetores -->
+        <div id="matrix-inputs" class="input-area">
+            <label for="matrix1">Matriz/Vetor 1:</label>
+            <textarea id="matrix1" rows="4" placeholder="Insira os valores, separados por vírgula, e as linhas por nova linha"></textarea>
+            
+            <label for="matrix2">Matriz/Vetor 2 (se aplicável):</label>
+            <textarea id="matrix2" rows="4" placeholder="Insira os valores, separados por vírgula, e as linhas por nova linha"></textarea>
+        </div>
+
+        <!-- Opção para escolher entre cliente ou servidor -->
+        <div class="execution-options">
+            <label for="execution">Calcular no:</label>
+            <select id="execution">
+                <option value="cliente">Cliente (JavaScript)</option>
+                <option value="servidor">Servidor (PHP)</option>
+            </select>
+        </div>
+
+        <!-- Botão para executar o cálculo -->
+        <button id="calculateBtn">Calcular</button>
+
+        <!-- Exibição dos resultados -->
+        <div class="results">
+            <h2>Resultados:</h2>
+            <p id="result">Resultado: <span></span></p>
+            <p id="clientTime">Tempo no cliente: <span></span></p>
+            <p id="serverTime">Tempo no servidor: <span></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
